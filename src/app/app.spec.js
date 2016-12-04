@@ -2,14 +2,14 @@ import app from './app';
 
 describe('app', () => {
 
-  describe('AppCtrl', () => {
+  describe('AppCtrl2', () => {
     let ctrl;
 
     beforeEach(() => {
       angular.mock.module(app);
 
       angular.mock.inject(($controller) => {
-        ctrl = $controller('AppCtrl', {});
+        ctrl = $controller('AppCtrl2', {});
       });
     });
 

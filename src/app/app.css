@@ -20,3 +20,8 @@ footer {
   text-align: center;
   font-size: 0.8em;
 }
+
+#mapid {
+  width: 600px;
+  height: 400px;
+}

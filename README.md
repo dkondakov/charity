@@ -19,7 +19,7 @@ Should be noted that apart from the pre-installed angular package, this workflow
 
 ### Quick start
 
-> Clone/Download the repo then edit `app.js` inside [`/src/app/app.js`](/src/app/app.js)
+> Clone/Download the repo then edit `app.module.js` inside [`/src/app/app.module.js`](/src/app/app.module.js)
 
 ```bash
 # clone our repo

@@ -1,10 +1,10 @@
 import angular from 'angular';
-import './map/map.module';
+import './app-map/app.map.module';
 
 import './app.css';
 
 angular
-	.module('app', ['mapModule'])
+	.module('app', ['appMap'])
 	.directive('app', function() {
 	  return {
 		templateUrl: './app.template.html'

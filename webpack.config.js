@@ -62,11 +62,11 @@ module.exports = function makeWebpackConfig () {
    * Type of sourcemap to use per build type
    */
   if (isTest) {
-    config.devtool = 'inline-source-map';
+    config.devtool = 'inline-source-app-map';
   } else if (isProd) {
-    config.devtool = 'source-map';
+    config.devtool = 'source-app-map';
   } else {
-    config.devtool = 'eval-source-map';
+    config.devtool = 'eval-source-app-map';
   }
 
   /**

@@ -30,7 +30,7 @@ module.exports = function makeWebpackConfig () {
    * Karma will set this when it's a test build
    */
   config.entry = isTest ? {} : {
-    app: './src/app/app.module.js'
+    app: './src/client/app/app.js'
   };
 
   /**
@@ -88,6 +88,9 @@ module.exports = function makeWebpackConfig () {
       loader: 'babel',
       exclude: /node_modules/
     }, {
+	  test: /\.(scss|sass)$/,
+	  loader: 'style!css!sass'
+	}, {
       // CSS LOADER
       // Reference: https://github.com/webpack/css-loader
       // Allow loading css through js
@@ -158,7 +161,7 @@ module.exports = function makeWebpackConfig () {
     // Render index.html
     config.plugins.push(
       new HtmlWebpackPlugin({
-        template: './src/app/index.html',
+        template: './src/client/index.html',
         inject: 'body'
       }),
 
@@ -187,7 +190,7 @@ module.exports = function makeWebpackConfig () {
       // Copy assets from the public folder
       // Reference: https://github.com/kevlened/copy-webpack-plugin
       new CopyWebpackPlugin([{
-        from: __dirname + '/src/app'
+        from: __dirname + '/src/client/app'
       }])
     )
   }
@@ -198,7 +201,7 @@ module.exports = function makeWebpackConfig () {
    * Reference: http://webpack.github.io/docs/webpack-dev-server.html
    */
   config.devServer = {
-    contentBase: './src/app',
+    contentBase: './src/client/app',
     stats: 'minimal'
   };
 

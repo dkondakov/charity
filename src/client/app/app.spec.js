@@ -1,15 +1,15 @@
-import app from './app.module';
+import app from './components/app-map/app.map.controller';
 
 describe('app', () => {
 
-  describe('AppCtrl', () => {
+  describe('AppMapController', () => {
     let ctrl;
 
     beforeEach(() => {
       angular.mock.module(app);
 
       angular.mock.inject(($controller) => {
-        ctrl = $controller('AppCtrl', {});
+        ctrl = $controller('AppMapController', {});
       });
     });
 

@@ -19,7 +19,7 @@ Should be noted that apart from the pre-installed angular package, this workflow
 
 ### Quick start
 
-> Clone/Download the repo then edit `app.module.js` inside [`/src/app/app.module.js`](/src/app/app.module.js)
+> Clone/Download the repo then edit `app.js` inside [`/src/client/app/app.js`](/src/client/app/app.js)
 
 ```bash
 # clone our repo
@@ -84,4 +84,4 @@ The port will be displayed to you as `http://localhost:8080`.
 
 # License
 
-[MIT](/LICENSE)
+[MIT](./LICENSE)

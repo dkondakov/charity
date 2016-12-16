@@ -1,20 +1,20 @@
-import app from './app';
+import app from './components/app-map/app.map.controller';
 
 describe('app', () => {
 
-  describe('AppCtrl', () => {
+  describe('AppMapController', () => {
     let ctrl;
 
     beforeEach(() => {
       angular.mock.module(app);
 
       angular.mock.inject(($controller) => {
-        ctrl = $controller('AppCtrl', {});
+        ctrl = $controller('AppMapController', {});
       });
     });
 
     it('should contain the starter url', () => {
-      expect(ctrl.url).toBe('https://github.com/preboot/angular-webpack');
+      expect(ctrl.url).toBe('http://google.com');
     });
   });
 });

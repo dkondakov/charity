@@ -6,6 +6,7 @@
     "install": "npm install",
     "build": "rimraf dist && webpack --bail --progress --profile",
     "server": "webpack-dev-server --history-api-fallback --inline --progress",
+    "backend": "node ./src/backend/server.js",
     "test": "karma start",
     "test-watch": "karma start --auto-watch --no-single-run",
     "start": "npm run server"
@@ -23,6 +24,8 @@
   "dependencies": {
     "angular": "^1.5.9",
     "angular-ui-router": "^0.3.2",
+    "express": "^4.14.0",
+    "fs": "0.0.1-security",
     "leaflet": "^1.0.2"
   },
   "devDependencies": {

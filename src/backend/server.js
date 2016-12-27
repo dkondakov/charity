@@ -12,7 +12,7 @@ app.get('/', function (req, res) {
 fs.writeFile('./src/public/markers.json', '{"marker": ' +
 	'{"id": "1", "latlng": "50.44943,30.53", "description": "Description"}}', function (err) {
   if (err) return console.log(err);
-  console.log('Hello World > helloworld.txt');
+  console.log('Markers > markers.json');
 });
 
 app.listen(port, function () {

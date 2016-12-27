@@ -8,13 +8,13 @@ class AppMapController {
     const $ctrl = this;
     
 	$ctrl.myMap = leaflet
-		.map(config.MAP_ID)
-		.setView(config.MAP_INIT_POS, config.MAP_INIT_ZOOM);
+		.map(config.map.ID)
+		.setView(config.map.view.INIT_POS, config.map.view.INIT_ZOOM);
   
-	leaflet.tileLayer(config.MAP_URL, {
-	  maxZoom: 18,
-	  attribution: config.MAP_ATTR,
-	  id: 'mapbox.streets'
+	leaflet.tileLayer(config.tileLayer.URL, {
+	  maxZoom: config.tileLayer.MAX_ZOOM,
+	  attribution: config.tileLayer.ATTR,
+	  id: config.tileLayer.ID
 	}).addTo($ctrl.myMap);
 	
 	$ctrl.myMap.on('click', addMarker);

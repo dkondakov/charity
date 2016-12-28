@@ -3,9 +3,9 @@ import controller from './app.map.controller';
 import './app.map.scss';
 
 const appMapComponent = {
-	template,
-	restrict: 'E',
-	controller
+  template,
+  restrict: 'E',
+  controller
 };
 
 export default appMapComponent;

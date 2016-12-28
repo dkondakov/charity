@@ -1,7 +1,7 @@
 import app from './components/app-map/app.map.controller';
+import angular from 'angular-mocks';
 
 describe('app', () => {
-
   describe('AppMapController', () => {
     let ctrl;
 
